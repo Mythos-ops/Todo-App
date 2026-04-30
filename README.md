@@ -6,12 +6,6 @@ A clean, fast, and responsive full-stack Todo application built with React, Expr
 
 ---
 
-## 🚀 Live Demo
-
-Experience the application live here: **[https://todo-app-c4u2.onrender.com](https://todo-app-c4u2.onrender.com)**
-
----
-
 ## ✨ Features
 
 - **Create** new todo items effortlessly.
