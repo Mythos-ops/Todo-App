@@ -1,45 +1,97 @@
-# Todo App
+# 📝 Full-Stack Todo Application
 
-A simple full-stack todo application built with React, Express, and a local JSON database.
+[![Live Demo](https://img.shields.io/badge/Live_Demo-View_Here-blue?style=for-the-badge)](https://todo-app-c4u2.onrender.com)
 
-## Features
+A clean, fast, and responsive full-stack Todo application built with React, Express.js, and a local JSON database. This project demonstrates core CRUD operations (Create, Read, Update, Delete) utilizing a modern client-server architecture.
 
-- Create todo items
-- View all todos
-- Mark todos as completed
-- Edit todo text
-- Delete todos
+---
 
-## Setup
+## 🚀 Live Demo
 
-1. Install dependencies:
+Experience the application live here: **[https://todo-app-c4u2.onrender.com](https://todo-app-c4u2.onrender.com)**
 
-```bash
-npm install
-```
+---
 
-2. Start the development server:
+## ✨ Features
+
+- **Create** new todo items effortlessly.
+- **Read/View** all your current tasks.
+- **Update** existing tasks by editing their text.
+- **Mark Complete/Incomplete** to track progress.
+- **Delete** tasks that are no longer needed.
+- **Seamless Local Persistence** via a file-based JSON store.
+
+---
+
+## 🛠️ Technologies Used
+
+### Frontend
+- **React 19**
+- **Vite** (Build tool & development server)
+- Modern UI Design / CSS
+
+### Backend
+- **Node.js**
+- **Express.js** (REST API)
+- **Local JSON Storage** (`server/data/todos.json`)
+
+---
+
+## 💻 Getting Started
+
+### Prerequisites
+Make sure you have [Node.js](https://nodejs.org/) installed on your machine.
+
+### Installation
+
+1. **Clone or download the project folder:**
+   ```bash
+   cd Todo-App
+   ```
+
+2. **Install all dependencies** (this covers both the React client and Express server):
+   ```bash
+   npm install
+   ```
+
+---
+
+## 🏃 Running the App
+
+### Development Mode
+
+To run both the frontend and backend servers simultaneously with live-reloading:
 
 ```bash
 npm run dev
 ```
 
-The frontend runs with Vite and the backend runs on `http://localhost:5000`.
+- The Express backend runs on `http://localhost:5000` (using Nodemon).
+- The Vite frontend runs locally (check your terminal for the exact `localhost` port, usually `5173`).
 
-## Production
+### Production Build
 
-Build the client:
+To build the client application and run it as a production server:
 
-```bash
-npm run build
-```
+1. **Build the React frontend:**
+   ```bash
+   npm run build
+   ```
+   *This compiles the React code and outputs static files directly to the server folder.*
 
-Then start the server:
+2. **Start the production server:**
+   ```bash
+   npm start
+   ```
 
-```bash
-npm start
-```
+The backend now serves the built frontend from its public directory, exactly how it runs on Render.
 
-The backend serves the built frontend from `server/public`.
+---
 
-The todo data is stored in `server/data/todos.json`.
+## 📂 Project Structure
+
+- `/client` - The Vite-powered React frontend application.
+- `/server` - The Express backend API.
+  - `/server/index.js` - Main server entry point.
+  - `/server/data/todos.json` - File-based local database.
+- `package.json` - Root configuration for concurrent scripts.
