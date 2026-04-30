@@ -2,6 +2,8 @@
   "name": "todo-mern-app",
   "private": true,
   "type": "module",
+  "version": "1.0.0",
+  "description": "A MERN Todo application",
   "scripts": {
     "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\"",
     "dev:server": "nodemon server/index.js",
