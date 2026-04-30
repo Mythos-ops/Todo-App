@@ -11,7 +11,7 @@ const app = express();
 const port = process.env.PORT || 5000;
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
-const clientBuildPath = path.resolve(__dirname, '../client/dist');
+const clientBuildPath = path.resolve(__dirname, '../server/public');
 
 app.use(cors());
 app.use(express.json());
