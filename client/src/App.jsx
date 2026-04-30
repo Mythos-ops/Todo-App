@@ -151,11 +151,7 @@ export default function App() {
     <main className="shell">
       <section className="hero">
         <div>
-          <p className="eyebrow">Full-stack todo app</p>
-          <h1>Keep tasks moving with a clean CRUD workflow.</h1>
-          <p className="lead">
-            Add todos, mark them complete, edit entries, and remove what you do not need.
-          </p>
+          <h1>Taskline</h1>
         </div>
         <div className="stats">
           <article>
@@ -175,7 +171,6 @@ export default function App() {
 
       <section className="panel form-panel">
         <form className="todo-form" onSubmit={handleSubmit}>
-          <label htmlFor="todo-text">Todo title</label>
           <div className="form-row">
             <input
               id="todo-text"
@@ -190,7 +185,6 @@ export default function App() {
             </button>
           </div>
           <div className="helper-row">
-            {editingId ? <span>Editing mode</span> : <span>Quick add mode</span>}
             {message ? <span className="success">{message}</span> : null}
           </div>
         </form>
@@ -200,7 +194,6 @@ export default function App() {
 
       <section className="panel list-panel">
         <div className="panel-head">
-          <h2>Your todos</h2>
           <button type="button" className="ghost" onClick={loadTodos}>
             Refresh
           </button>
